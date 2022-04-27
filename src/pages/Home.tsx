@@ -9,10 +9,13 @@ export function Home() {
     <div>
       <section>
         <p>
-          <Link to={`/${Object.keys(data)[0]}`}>{data.pandas.title}</Link>
+          <Link to={`/${Object.keys(data)[0]}`}>
+            <img src={data.pandas.photos[0].imageURL} width="600px" />
+
+            {data.pandas.title}
+          </Link>
         </p>
         <p>{data.pandas.description}</p>
-        <img src={data.pandas.photos[0].imageURL} width="600px" />
       </section>
       <section>
         <p>

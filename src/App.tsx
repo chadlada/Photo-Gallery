@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router'
 import { Home } from './pages/Home'
 import { Link } from 'react-router-dom'
 import { PhotoDetail } from './pages/PhotoDetail'
+import { PhotoList } from './pages/PhotoList'
 
 export function App() {
   return (
@@ -18,7 +19,7 @@ export function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/:things" element={<PhotoList />}></Route>
-          <Route path="/:things/:photoIndex" element={<PhotoDetail />}></Route>
+          <Route path="/:things/:id" element={<PhotoDetail />}></Route>
         </Routes>
       </main>
     </div>
